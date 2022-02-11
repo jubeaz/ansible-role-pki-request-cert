@@ -24,3 +24,4 @@
     use_ssh_args: true
     mode: pull
   delegate_to: "{{ _ca_name }}"
+  when: _openssl_csr.changed == true

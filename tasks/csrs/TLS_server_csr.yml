@@ -7,3 +7,4 @@
     subject_alt_name: "{{ vars[_san_var] | map('regex_replace', '^', 'DNS:') | list }}"
     digest: "{{ _ca_template_params.default_md }}"
     mode: 0744
+  register: _openssl_csr
